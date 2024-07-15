@@ -104,10 +104,8 @@ nav a{
 /* logos end */
 /* popular collection start  */
    .popular-collection{
-    width: 1047px;
-    /* height: 1662px; */
+    width: 1100px;
     margin: 0 auto;
-    border: 2px solid olive;
     margin-top: 100px;
    }
    .popular-title{
@@ -117,9 +115,14 @@ nav a{
     text-align:center ;    
     margin-bottom: 30px;
    }
+   .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+   }
    .card{
-     width: 329px;
-     height: 476px;
+     width: 320px;
+     height: 446px;
      padding: 14px;
      border-radius: 5px;
      
@@ -200,6 +203,13 @@ nav a{
    
   .logos img{
     width: 90%;
-
   }
+  .cards{
+    grid-template-columns: 1fr;
+  }
+
+  .popular-collection{
+    max-width: 90%;
+    margin-top: 30px;
+   }
 }
